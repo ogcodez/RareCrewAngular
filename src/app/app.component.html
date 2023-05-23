@@ -1,15 +1,6 @@
-<table id="employee" *ngFor="let employee of employees | keyvalue">
-  <tr>
-    <th>Name</th>
-    <th>Total Time In Month</th>
-  </tr>
-  <tr [ngStyle]="{'background-color': getColor(employee.value.TotalTimeWorked)}">
-    <td>{{employee.key}}</td>
-    <td>{{employee.value.TotalTimeWorked}}</td>
-  </tr>
-</table>
-<div class="chart-container" style="width: 800px; height: 600px;">
-  <canvas id="my-chart">
-  </canvas>
+<div class="app">
+    <empTable></empTable>
+    <piechart></piechart>
 </div>
+
 <router-outlet></router-outlet>

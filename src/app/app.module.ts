@@ -5,12 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-import { NgChartsModule } from 'ng2-charts';
+import { empTable } from './Table/table.component';
+import { pieChartComponent } from './PieChart/piechart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    empTable,
+    pieChartComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +21,6 @@ import { NgChartsModule } from 'ng2-charts';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

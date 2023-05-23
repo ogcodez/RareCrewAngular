@@ -1,0 +1,12 @@
+<div class="tabela">
+  <table id="employee" *ngFor="let employee of employees | keyvalue">
+    <tr>
+      <th>Name</th>
+      <th>Total Time In Month</th>
+    </tr>
+    <tr [ngStyle]="{'background-color': getColor(employee.value.TotalTimeWorked)}">
+      <td>{{employee.key}}</td>
+      <td>{{employee.value.TotalTimeWorked}}</td>
+    </tr>
+  </table>
+</div>
